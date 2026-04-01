@@ -129,7 +129,7 @@ a {
 }
 .like{
   font-size: 14px;
-  background: url(like.png);
+  background: url(./assets/images/like.png);
   background-repeat: no-repeat;
   padding-left: 20px;
   color: #6983bd;
@@ -159,19 +159,19 @@ a {
   padding-left: 64px;
 }
 .pic1 {
-  background: url(1.jpg) no-repeat scroll 0px 0px transparent;
+  background: url(./assets/images/1.jpg) no-repeat scroll 0px 0px transparent;
 }
 .pic2 {
-  background: url(2.jpg) no-repeat scroll 0px 0px transparent;
+  background: url(./assets/images/2.jpg) no-repeat scroll 0px 0px transparent;
 }
 .pic3 {
-  background: url(3.jpg) no-repeat scroll 0px 0px transparent;
+  background: url(./assets/images/3.jpg) no-repeat scroll 0px 0px transparent;
 }
 .pic4 {
-  background: url(4.jpg) no-repeat scroll 0px 0px transparent;
+  background: url(./assets/images/4.jpg) no-repeat scroll 0px 0px transparent;
 }
 .pic5 {
-  background: url(5.jpg) no-repeat scroll 0px 0px transparent;
+  background: url(./assets/images/5.jpg) no-repeat scroll 0px 0px transparent;
 }
 .content {
   padding: 10px 10px 0px 10px;

@@ -12,38 +12,17 @@
         position: relative;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://resources.landerlab.io/css/styles.css"
-      landerlab-styles=""
-    />
-    <link
-      rel="stylesheet"
-      href="https://landerlab-quiz.pages.dev/style.css"
-      landerlab-styles=""
-    />
+    <link rel="stylesheet" href="/styles.css" landerlab-styles="" />
+    <link rel="stylesheet" href="/style.css" landerlab-styles="" />
     <meta charset="UTF-8" />
     <base href="" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0"
-    />
+    <meta name="viewport" content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://moneystyle.net/usefull_landing_0602/style02.css?ll-v=mhluesf3"
-    />
-    <script
-      type="text/javascript"
-      src="https://moneystyle.net/usefull_landing_0602/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://moneystyle.net/usefull_landing_0602/main03.js"
-    ></script>
+    <link rel="stylesheet" type="text/css" href="style02.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="main03.js"></script>
     <script type="text/javascript">
       function readQueryParam(paramName) {
         const queryString = window.location.search.substring(1);
@@ -61,11 +40,7 @@
       }
     </script>
     <title>Congratulations!</title>
-    <link
-      rel="icon"
-      href="https://cdn-adef.akamaized.net/images/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="https://cdn-adef.akamaized.net/images/favicon.ico" type="image/x-icon" />
 
     <script>
       function setCookie(name, value, expiry = 2592000000, path = "/") {
@@ -238,8 +213,6 @@
         margin-top: 2px;
         margin-bottom: 2px;
       }
-
-      /* ТЗ: кнопка і обводка modal01 — помаранчеві */
       #modal01 {
         border: 3px solid #ff8c00 !important;
       }
@@ -332,8 +305,6 @@
         }
       }
 
-      /* Спін 1: від 0 → lost */
-      /* Спін 1: від 0 → lost */
       .spinAround2 {
         -webkit-animation: spinTwo 6.6s !important;
         animation: spinTwo 6.6s !important;
@@ -356,7 +327,6 @@
         }
       }
 
-      /* Спін 2: від lost → $1000 */
       .spinAround3 {
         -webkit-animation: spinThree 6.6s;
         animation: spinThree 6.6s;
@@ -379,7 +349,6 @@
         }
       }
 
-      /* Спін 3: від $1000 → $5000 */
       .spinAround4 {
         -webkit-animation: spinFour 6.6s;
         animation: spinFour 6.6s;
@@ -403,121 +372,79 @@
       }
     </style>
 
-    <!-- header -->
     <div id="a-nav" class="a-nav"><h1 id="i8gj">Congratulations!</h1></div>
-    <!-- /header -->
-
-    <!-- main -->
     <main id="i3w7c">
       <div id="imtpr" class="content">
         <div id="content1" class="main-content">
           <div id="spinner" class="spinner">
-            <img
-              id="spinBG"
-              src="https://moneystyle.net/usefull_landing_0602/wheel2.webp"
-              class="spinAround"
-            />
-            <img
-              id="win"
-              src="https://moneystyle.net/usefull_landing_0602/spin-button.png"
-            />
+            <img id="spinBG" src="./assets/images/wheel2.webp" class="spinAround" />
+            <img id="win" src='/assets/images/spin-button.png' />
           </div>
         </div>
       </div>
     </main>
-    <!-- /main -->
 
-    <!-- Overlay -->
     <div id="iawai" tabindex="-1" class="sweet-overlay"></div>
-    <!-- /Overlay -->
-
-    <!-- modal01: ТЗ — таймер прибрано, сума $3,000, кнопка і рамка помаранчеві -->
     <div id="modal01" class="modal sweet-alert animated bounceIn visible">
       <div id="i1olm" class="modal_container_1">
         <h2 id="i313a">CONGRATULATIONS!</h2>
         <p id="g41uat" attr-cou="default">
           YOU CAN GET <br id="ij4kj" />
-          <!-- ТЗ: сума $3,000 -->
           <strong id="as5000" class="text_grad"> $3,000 </strong>
         </p>
       </div>
       <div id="izxd2" class="sa-button-container">
         <div id="icpnd" class="sa-confirm-button-container">
-          <button
-            id="modalButtonFirst"
-            data-gjs-type="button"
-            class="modal_button"
-          >
+          <button id="modalButtonFirst" data-gjs-type="button" class="modal_button">
             OK
           </button>
-          <!-- ТЗ: таймер прибрано (div#ifh04 видалено) -->
         </div>
       </div>
     </div>
-    <!-- /modal01 -->
-
-    <!-- modal02: ТЗ — грустний смайлик, "Oops! You lost / Try again now!" -->
     <div id="modal02" class="modal sweet-alert animated bounceIn">
       <div id="success02" class="sa-icon sa-success animate">
         <span id="successtip02" class="sa-line sa-tip animateSuccessTip"></span>
-        <span
-          id="successlong02"
-          class="sa-line sa-long animateSuccessLong"
-        ></span>
+        <span id="successlong02" class="sa-line sa-long animateSuccessLong"></span>
         <div id="ilrxh" class="sa-placeholder"></div>
         <div id="i5xbg" class="sa-fix"></div>
       </div>
-      <!-- ТЗ: грустний смайлик + текст -->
       <h2 id="ijwlj" style="font-size: 40px; margin: 0">😔</h2>
       <h2>Oops! You lost</h2>
       <p id="i2k3v" class="modal_text">Try again now!</p>
       <div id="ikdsi" class="sa-button-container">
         <div id="iokq7" class="sa-confirm-button-container">
-          <button
-            id="modalButtonSecond"
-            data-gjs-type="button"
-            class="modal_button"
-          >
+          <button id="modalButtonSecond" data-gjs-type="button" class="modal_button">
             OK
           </button>
         </div>
       </div>
     </div>
-    <!-- /modal02 -->
-
-    <!-- modal03: ТЗ — "You win $1000 / Spin one more time!" -->
- <div id="modal03" class="modal sweet-alert animated bounceIn">
-  <div id="success03" class="sa-icon sa-success animate">
-    <span id="successtio03" class="sa-line sa-tip"></span>
-    <span id="successlong03" class="sa-line sa-long animateSuccessLong"></span>
-    <div id="ikwh1" class="sa-placeholder"></div>
-    <div id="iyr09" class="sa-fix"></div>
-  </div>
-  <div id="ihv89" class="modal_container_3" style="padding-top: 20px;">
-    <div id="ijjtmh" style="margin-top:0;">
-      <span id="fo5ijg" style="color:#000; font-weight:bold; font-size:24px; display:block;">You win</span>
-      <a id="if43m" style="color:limegreen; font-weight:900; font-size:42px; display:block; margin:4px 0;">$1000</a>
-      <span id="ir9jml" style="color:#000; font-size:13px; display:block;">on virtual balance!</span>
-      <br />
-      <span id="ed47rk" style="color:#000; font-size:15px; display:block;">Spin one more time!</span>
+    <div id="modal03" class="modal sweet-alert animated bounceIn">
+      <div id="success03" class="sa-icon sa-success animate">
+        <span id="successtio03" class="sa-line sa-tip"></span>
+        <span id="successlong03" class="sa-line sa-long animateSuccessLong"></span>
+        <div id="ikwh1" class="sa-placeholder"></div>
+        <div id="iyr09" class="sa-fix"></div>
+      </div>
+      <div id="ihv89" class="modal_container_3" style="padding-top: 20px;">
+        <div id="ijjtmh" style="margin-top:0;">
+          <span id="fo5ijg" style="color:#000; font-weight:bold; font-size:24px; display:block;">You win</span>
+          <a id="if43m" style="color:limegreen; font-weight:900; font-size:42px; display:block; margin:4px 0;">$1000</a>
+          <span id="ir9jml" style="color:#000; font-size:13px; display:block;">on virtual balance!</span>
+          <br />
+          <span id="ed47rk" style="color:#000; font-size:15px; display:block;">Spin one more time!</span>
+        </div>
+        <div style="margin-top: 14px">
+          <button id="modalButtonThird" data-gjs-type="button" class="modal_button">
+            OK
+          </button>
+        </div>
+      </div>
     </div>
-    <div style="margin-top: 14px">
-      <button id="modalButtonThird" data-gjs-type="button" class="modal_button">
-        OK
-      </button>
-    </div>
-  </div>
-</div>
-    <!-- /modal03 -->
-
-    <!-- modal04: ТЗ — фінальний як в оригіналі, сума $5,000, редирект google.com -->
     <div id="modal04" class="modal sweet-alert animated bounceIn">
       <div id="success04" class="sa-icon sa-success animate">
         <span id="successtip04" class="sa-line sa-tip"></span>
-        <span
-          id="successlong04"
-          class="sa-line sa-long animateSuccessLong"
-        ></span>
+        <span id="successlong04" class="sa-line sa-long animateSuccessLong"></span>
         <div class="sa-placeholder"></div>
         <div class="sa-fix"></div>
       </div>
@@ -526,31 +453,20 @@
           Congratulations!
         </h2>
         <div id="ijjtmhb" style="margin-top: -15px">
-          <!-- ТЗ: сума $5,000 -->
-          <span
-            id="fo5ijg2"
-            style="font-weight: bold; font-size: 30px; color: darkslategray"
-          >
+          <span id="fo5ijg2" style="font-weight: bold; font-size: 30px; color: darkslategray">
             You won the <a style="color: limegreen">$5,000</a> </span
           ><br id="io1ammb" />
-          <span id="ir9jml2" style="font-size: 13px; color: darkslategray"
-            >on virtual balance!</span
-          >
+          <span id="ir9jml2" style="font-size: 13px; color: darkslategray">on virtual balance!</span>
           <br /><br />
-          <span id="ed47rk2" style="font-size: 15px; color: darkslategray"
-            >Download the free app from
+          <span id="ed47rk2" style="font-size: 15px; color: darkslategray">Download the free app from
           </span>
           <span id="typeOS">App Store</span>
         </div>
-        <!-- ТЗ: onclick викликає gotoW() який тепер веде на google.com -->
         <div id="i5mzwz" onclick="gotoW()" class="prize_button a-btn-cont">
           <a id="btntxt" data-translate="inst">Download</a>
         </div>
       </div>
     </div>
-    <!-- /modal04 -->
-
-    <!-- comments — без змін -->
     <div id="i6lzsk" class="content">
       <div id="i568ow" class="main-content2">
         <div id="ia27uy" class="comments">
@@ -570,11 +486,8 @@
             <p id="im895b" class="comentarios">
               I had never won anything, but today I was lucky! Thank you!
             </p>
-            <span id="i15ngq" class="comment-status"
-              ><span id="ibtxlr"
-                ><span id="iltlj5" class="like"> Like </span> · Reply · Just now
-              </span></span
-            >
+            <span id="i15ngq" class="comment-status"><span id="ibtxlr"><span id="iltlj5" class="like"> Like </span> · Reply · Just now
+              </span></span>
           </div>
         </div>
         <div id="i77hhp" class="comments">
@@ -583,12 +496,9 @@
             <p id="idjma7" class="comentarios">
               Wasn't sure if it was real, but I actually received $1000 today!
             </p>
-            <span id="iopm9x" class="comment-status"
-              ><span id="imsezo"
-                ><span id="ibbvs3" class="like"> Like </span> · Reply · 2
+            <span id="iopm9x" class="comment-status"><span id="imsezo"><span id="ibbvs3" class="like"> Like </span> · Reply · 2
                 minutes ago
-              </span></span
-            >
+              </span></span>
           </div>
         </div>
         <div id="iucc2f" class="comments">
@@ -598,24 +508,18 @@
               Didn't believe it at first, but now I've got $500!
               <br id="izhoxm" />
             </p>
-            <span id="iqtve4" class="comment-status"
-              ><span id="ioazi9"
-                ><span id="i5987i" class="like"> Like </span> · Reply · 4
+            <span id="iqtve4" class="comment-status"><span id="ioazi9"><span id="i5987i" class="like"> Like </span> · Reply · 4
                 minutes ago
-              </span></span
-            >
+              </span></span>
           </div>
         </div>
         <div id="i1doip" class="comments">
           <div id="icr9m5" class="comment-content pic4">
             <p id="i63rn3" class="name">Mike Hines</p>
             <p id="i7xs8g" class="comentarios">Sweeeet! I've won!! My gosh!</p>
-            <span id="i2mb4i" class="comment-status"
-              ><span id="id50kv"
-                ><span id="i4dglg" class="like"> Like </span> · Reply · 8
+            <span id="i2mb4i" class="comment-status"><span id="id50kv"><span id="i4dglg" class="like"> Like </span> · Reply · 8
                 minutes ago
-              </span></span
-            >
+              </span></span>
           </div>
         </div>
         <div id="iuy4re" class="comments">
@@ -624,17 +528,13 @@
             <p id="i7c8ar" class="comentarios">
               I've lost 😢 Can I play again??? <br id="inxfmv" />
             </p>
-            <span id="is8k0n" class="comment-status"
-              ><span id="iulp4j"
-                ><span id="irm1x4" class="like"> Like </span> · Reply · 11
+            <span id="is8k0n" class="comment-status"><span id="iulp4j"><span id="irm1x4" class="like"> Like </span> · Reply · 11
                 minutes ago
-              </span></span
-            >
+              </span></span>
           </div>
         </div>
       </div>
     </div>
-    <!-- /comments -->
 
     <script type="text/javascript" landerlab-script="">
       const llQueryStrings = decodeURI(window.location.search)
@@ -687,37 +587,14 @@
       }
     </script>
 
-    <script
-      src="https://resources.landerlab.io/js/scripts.js"
-      landerlab-script=""
-      defer=""
-    ></script>
+    <script src="scripts.js" landerlab-script="" defer=""></script>
 
-    <!-- ============================================================ -->
-    <!-- CUSTOM JS — тільки зміни по ТЗ, решта логіки як в оригіналі -->
-    <!-- ============================================================ -->
     <script type="text/javascript">
-      /***********************************************/
-      // spin state
-      // ТЗ: кількість спінів змінено з 2 до 3
-      /***********************************************/
       var spinCount = 0;
-
-      /***********************************************/
-      // show/hide modals — використовуємо оригінальні класи
-      /***********************************************/
-
-      // ТЗ: після спіну 1 → modal02 (програш)
-      /***********************************************/
-      // после спина 1 → modal02 (проигрыш)
-      /***********************************************/
       function hidemodal01() {
         $("#modal01").removeClass("visible");
         $(".sweet-overlay").css("display", "none");
-        // спин 1 → lost (spinAround2)
-        $("#spinBG").removeClass(
-          "spinAround spinAround2 spinAround3 spinAround4"
-        );
+        $("#spinBG").removeClass("spinAround spinAround2 spinAround3 spinAround4");
         void document.getElementById("spinBG").offsetWidth;
         $("#spinBG").addClass("spinAround2");
         setTimeout(function () {
@@ -734,10 +611,7 @@
       function hidemodal02() {
         $("#modal02").removeClass("visible");
         $(".sweet-overlay").css("display", "none");
-        // спин 2 → $1000 (spinAround3)
-        $("#spinBG").removeClass(
-          "spinAround spinAround2 spinAround3 spinAround4"
-        );
+        $("#spinBG").removeClass("spinAround spinAround2 spinAround3 spinAround4");
         void document.getElementById("spinBG").offsetWidth;
         $("#spinBG").addClass("spinAround3");
         setTimeout(function () {
@@ -754,10 +628,7 @@
       function hidemodal03() {
         $("#modal03").removeClass("visible");
         $(".sweet-overlay").css("display", "none");
-        // спин 3 → $5000 (spinAround4)
-        $("#spinBG").removeClass(
-          "spinAround spinAround2 spinAround3 spinAround4"
-        );
+        $("#spinBG").removeClass("spinAround spinAround2 spinAround3 spinAround4");
         void document.getElementById("spinBG").offsetWidth;
         $("#spinBG").addClass("spinAround4");
         setTimeout(function () {
